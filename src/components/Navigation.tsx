@@ -34,7 +34,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/434a99ad-b6ce-43d2-b381-ad8f7dc10924.png" 
               alt="Zynapxe Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </div>
 

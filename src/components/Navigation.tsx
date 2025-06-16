@@ -32,7 +32,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/c9995d31-31a7-48cf-849c-8ad6ecfd76d8.png" 
+              src="/lovable-uploads/434a99ad-b6ce-43d2-b381-ad8f7dc10924.png" 
               alt="Zynapxe Logo" 
               className="h-8 w-auto"
             />

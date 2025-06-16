@@ -20,21 +20,21 @@ const Navigation = () => {
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
     { label: 'Case Studies', href: '#case-studies' },
-    { label: 'Team', href: '#team' }
+    { label: 'What We Offer', href: '#offerings' }
   ];
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-navy-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-gray-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/b50829f3-95e0-4a67-8242-d763ad1f532d.png" 
+              src="/lovable-uploads/c9995d31-31a7-48cf-849c-8ad6ecfd76d8.png" 
               alt="Zynapxe Logo" 
-              className="h-10 w-auto"
+              className="h-8 w-auto"
             />
           </div>
 
@@ -44,20 +44,20 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-white hover:text-teal-400 transition-colors duration-300 font-inter font-medium relative group"
+                className="text-white hover:text-blue-400 transition-colors duration-300 font-inter font-medium relative group"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <Button className="btn-primary ml-4">
+            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 ml-4">
               Contact Us
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white hover:text-teal-400 transition-colors duration-300"
+            className="md:hidden text-white hover:text-blue-400 transition-colors duration-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,18 +68,18 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-navy-700">
+          <div className="md:hidden mt-4 py-4 border-t border-gray-700">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="block py-2 text-white hover:text-teal-400 transition-colors duration-300"
+                className="block py-2 text-white hover:text-blue-400 transition-colors duration-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.label}
               </a>
             ))}
-            <Button className="btn-primary mt-4 w-full">
+            <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-6 py-2 rounded-lg mt-4 w-full">
               Contact Us
             </Button>
           </div>
